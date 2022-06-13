@@ -1,1 +1,32 @@
-aW1wb3J0IHdlYmJyb3dzZXIKaW1wb3J0IHRpbWUKaW1wb3J0IHJhbmRvbQoKCng9J3knCnk9J24nCgoKej1pbnB1dCgnQXJlIFlvdSBBIEhhY2tlcj8gKHkgb3IgbikgICcpCgppZiB6ID09IHg6CiAgICB3aGlsZSBUcnVlOgogICAgICAgICN5b3UgY2FuIHB1dCBhbnkgb3RoZXIgc2l0IG9yIGJlZWYgbGluayB0byBoYWNrCiAgICAgICAgc2l0ZSA9IHJhbmRvbS5jaG9pY2UoWydnb29nbGUuY29tJyAsICdmYWNlYm9vay5jb20nXSkKICAgICAgICB2aXNpdCA9ICJodHRwOi8ve30iLmZvcm1hdChzaXRlKQogICAgICAgIHdlYmJyb3dzZXIub3Blbih2aXNpdCkKICAgICAgICBzZWNvbmRzID0gcmFuZG9tLnJhbmRyYW5nZSgwLDUpCiAgICAgICAgdGltZS5zbGVlcChzZWNvbmRzKQogICAgICAgIGV4aXQKCmVsaWYgeiA9PSB5OgogICAgd2hpbGUgVHJ1ZToKICAgICAgICAgI3lvdSBjYW4gcHV0IGFueSBvdGhlciBzaXQgb3IgYmVlZiBsaW5rIHRvIGhhY2sKICAgICAgICBzaXRlID0gcmFuZG9tLmNob2ljZShbJ2dvb2dsZS5jb20nICwgJ2ZhY2Vib29rLmNvbSddKQogICAgICAgIHZpc2l0ID0gImh0dHA6Ly97fSIuZm9ybWF0KHNpdGUpCiAgICAgICAgd2ViYnJvd3Nlci5vcGVuKHZpc2l0KQogICAgICAgIHNlY29uZHMgPSByYW5kb20ucmFuZHJhbmdlICgwLDUpCiAgICAgICAgdGltZS5zbGVlcCAoc2Vjb25kcykKICAgICAgICBleGl0CmVsc2U6CiAgIHByaW50KCd0cnkgYWdhaW4gd2l0aCAoeSBvciBuKSkgI2JlZWZfbGluayAgICAgICAgICcpCg==
+import webbrowser
+import time
+import random
+
+
+x='y'
+y='n'
+
+
+z=input('Are You A Hacker? (y or n)  ')
+
+if z == x:
+    while True:
+        #you can put any other site or beef link to hack
+        site = random.choice(['google.com' , 'facebook.com'])
+        visit = "http://{}".format(site)
+        webbrowser.open(visit)
+        seconds = random.randrange(0,5)
+        time.sleep(seconds)
+        exit
+
+elif z == y:
+    while True:
+         #you can put any other site or beef link to hack
+        site = random.choice(['google.com' , 'facebook.com'])
+        visit = "http://{}".format(site)
+        webbrowser.open(visit)
+        seconds = random.randrange (0,5)
+        time.sleep (seconds)
+        exit
+else:
+   print('try again with (y or n))          ')
